@@ -1,0 +1,245 @@
+.player {
+ 
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-image: url("player.png");
+  
+    /* margin-top: 100px;
+    margin-left: 50px; */  
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.back_ground{
+    height: 100%;
+    width : 100%;
+    background-image: linear-gradient(rgba(0.1,0.1,0.1,0.1),rgba(0.1,0.1,0.1,0.1)),url("arena11.png");
+    background-position: center;
+    background-size: contain;
+    position: relative;
+
+}
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(175, 40, 40);
+    cursor: default;
+    z-index: 1000;
+}
+.start-game1 {
+    font-family:Impact, Charcoal, sans-serif; 
+    padding: 0.9rem 3rem;
+    font-size: 3.2rem;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s ease;
+    letter-spacing: 2px;
+    background: rgba(175, 40, 40);
+}
+.start-game1:hover {
+    background: rgb(255, 0, 0);
+    border: 2px solid rgb(245, 241, 1);
+}
+
+.pause_b{
+    width: 150px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("pause1.png");
+    object-fit: fill;
+    font-size: 2rem;
+    outline: none;
+    background-color: tomato;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #f9e506;
+    
+    
+}
+.restart_b
+{
+    width: 150px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("restart1.png");
+    object-fit: fill;
+    font-size: 2rem;
+    outline: none;
+    background-color: tomato;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #f9e506;
+    
+}
+.restart_b:hover{
+    color: white;
+    opacity: 0.7;
+    transition: ease-out 0.5s;
+    box-shadow: inset 300px 0 0 0 #f9e506;
+    cursor: pointer;
+    
+}
+.pause_b:hover{
+    color:white;
+    opacity: 0.7;  
+    transition: ease-out 0.5s;
+    box-shadow: inset 300px 0 0 0 #f9e506;
+    cursor: pointer;
+    color : #000 ;
+    
+}
+#timer{
+    font-family: 'atari 1' , sans-serif ;
+    color: rgb(245, 241, 1);
+    font-size: 60px;
+    font-weight:bold;
+    line-height:20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+button{
+    color: rgb(248, 232, 10)00;
+    width: 160px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("pause.png");
+    object-fit: fill;
+    font-size: 2rem;
+    outline: none;
+    background-color: rgb(68, 21, 13);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #f9e506;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.bttn{
+    display: flex;
+    justify-self: start;
+}
+.b_btn{
+    width: 150px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("start1.png");
+    object-fit: fill;
+    font-size: 2rem;
+    outline: none;
+    background-color: tomato;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #f9e506;  
+}
+.b_btn:hover {
+    color: white;
+    opacity: 0.7;
+    transition: ease-out 0.5s;
+    box-shadow: inset 300px 0 0 0 #f9e506;
+    cursor: pointer;
+    
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#monster {
+    width: 156px;
+    height: 140px;
+    background-image: url("canavar3.png");
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+}
+
+#spell {
+    width: 150px;
+    height: 150px;
+    background-image: url("redspell.png");
+    position: absolute;
+    left: 940px;
+    top: 300px;
+    border-radius: 100px;
+}
+#bluespell {
+    width: 160px;
+    height: 160px;
+    background-image: url("bluespell.png");
+    position: absolute;
+    left: 940px;
+    top: 300px;
+    border-radius: 100px;
+}
+#axe {
+    width: 90px;
+    height: 180px;
+    background-image: url("axe.png");
+    position: absolute;
+    left: 910px;
+    top: 400px;
+}
+
+div {
+    cursor: url("player.png"), auto;
+}
+@import url('http://fonts.cdnfonts.com/css/atari-1');
+
+
+.cn {
+display: table-cell;
+width: 100%;
+height: 100%;
+vertical-align: middle;
+text-align: center;
+}
+
+.inner {
+display: inline-block;
+width: 200px; height: 200px;
+}
+  
+.gameover {
+    font-family:Impact, Charcoal, sans-serif; 
+    padding: 0.9rem 3rem;
+    font-size: 4.2rem;
+    transition: 0.3s ease;
+    letter-spacing: 5px;
+    background: rgba(175, 40, 40);
+    margin-bottom: 400px;
+     
+}
+.score {
+    font-family:Impact, Charcoal, sans-serif; 
+    padding: 0.9rem 3rem;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+    letter-spacing: 5px;
+    background: rgba(175, 40, 40);
+}
+.continue {
+    font-family:Impact, Charcoal, sans-serif; 
+    padding: 0.9rem 3rem;
+    font-size: 3.2rem;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s ease;
+    letter-spacing: 10px;
+    background: rgba(175, 40, 40);
+    margin-top: 400px;
+    
+}
+.continue:hover {
+    background: rgb(255, 0, 0);
+    border: 2px solid rgb(245, 241, 1);
+}
+
+    
